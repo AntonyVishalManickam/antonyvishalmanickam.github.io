@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a.active, nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+.screenshot img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+section.content {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
