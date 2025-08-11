@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMAIV TECH APP STORE</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sticky banner ad styling */
+        .sticky-ad {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            z-index: 9999;
+            text-align: center;
+            padding: 5px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        body {
+            padding-top: 320px; /* Prevent content from hiding under sticky ad */
+        }
+    </style>
 </head>
 <body>
 
-<!-- Banner Ad at the top -->
-<div style="text-align: center; margin: 10px 0;">
+<!-- Sticky Banner Ad -->
+<div class="sticky-ad">
     <script type="text/javascript">
         atOptions = {
             'key' : '753eee39acf4ed7474cac01c46e88cd4',
@@ -24,7 +41,7 @@
 
 <header>
     <div class="container">
-        <h1>SMAIV TECH</h1>
+        <h1>Billing System</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="features.html">Features</a>
