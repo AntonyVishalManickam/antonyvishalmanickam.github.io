@@ -4,53 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate - SMAIV TECH</title>
+    <link rel="stylesheet" href="style.css"> <!-- Using your existing site style -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background: #f8f8f8;
             text-align: center;
-            background: #f4f4f4;
             padding: 20px;
         }
-        h1 {
-            color: #333;
+        .donate-buttons {
+            margin-top: 20px;
         }
-        .btn {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
+        .donate-buttons a {
             display: inline-block;
-            margin-top: 20px;
+            margin: 10px;
+            padding: 15px 25px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
         }
-        .btn:hover {
-            background-color: #218838;
+        .donate-buttons a:hover {
+            background: #218838;
         }
-        img {
-            max-width: 250px;
-            margin-top: 20px;
-            border: 3px solid #ddd;
-            border-radius: 10px;
+        .custom-btn {
+            background: #007bff;
+        }
+        .custom-btn:hover {
+            background: #0056b3;
+        }
+        .qr {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Support SMAIV TECH ❤️</h1>
-    <p>Help us keep building amazing apps and services.  
-    Click the button below to donate directly using UPI.</p>
+<header>
+    <div class="container">
+        <h1>SMAIV TECH</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+            <a href="donate.html" class="active">Donate</a>
+        </nav>
+    </div>
+</header>
 
-    <!-- UPI Payment Link -->
-    <a class="btn" href="upi://pay?pa=antonyvishal2006-1@okaxis&pn=Antony%20Vishal&cu=INR">
-        💰 Donate via UPI
-    </a>
+<section class="hero">
+    <div class="container">
+        <h2>Support SMAIV TECH</h2>
+        <p>If you like our work, you can support us by donating any amount via UPI.</p>
 
-    <h2>Or Scan the QR Code</h2>
-    <!-- Replace with your actual QR Code image -->
-    <img src="upi-qr.png" alt="UPI QR Code">
+        <!-- Quick Amount Buttons -->
+        <div class="donate-buttons">
+            <a href="upi://pay?pa=antonyvishal2006-1@okaxis&pn=Antony%20Vishal&am=50&cu=INR">Donate ₹50</a>
+            <a href="upi://pay?pa=antonyvishal2006-1@okaxis&pn=Antony%20Vishal&am=100&cu=INR">Donate ₹100</a>
+            <a href="upi://pay?pa=antonyvishal2006-1@okaxis&pn=Antony%20Vishal&am=500&cu=INR">Donate ₹500</a>
+            <a class="custom-btn" href="upi://pay?pa=antonyvishal2006-1@okaxis&pn=Antony%20Vishal&cu=INR">Custom Amount</a>
+        </div>
 
-    <p>UPI ID: <strong>antonyvishal2006-1@okaxis</strong></p>
+        <!-- QR Code -->
+        <div class="qr">
+            <h3>Or Scan this QR Code</h3>
+            <img src="upi-qr.png" alt="UPI QR Code" width="250">
+            <p>(Works with Google Pay, PhonePe, Paytm, etc.)</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 SMAIV TECH. All Rights Reserved.</p>
+</footer>
 
 </body>
-                                                    </html>
+</html>
